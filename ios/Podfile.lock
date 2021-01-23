@@ -1,0 +1,83 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_lottie (0.0.1):
+    - Flutter
+    - lottie-ios
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - geocoder (0.0.1):
+    - Flutter
+  - "geolocator (5.3.2+2)":
+    - Flutter
+  - google_maps_flutter (0.0.1):
+    - Flutter
+    - GoogleMaps (< 3.10)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - location (0.0.1):
+    - Flutter
+  - "location_permissions (3.0.0+1)":
+    - Flutter
+  - lottie-ios (2.5.3)
+  - permission (0.0.1):
+    - Flutter
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_lottie (from `.symlinks/plugins/flutter_lottie/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - geocoder (from `.symlinks/plugins/geocoder/ios`)
+  - geolocator (from `.symlinks/plugins/geolocator/ios`)
+  - google_maps_flutter (from `.symlinks/plugins/google_maps_flutter/ios`)
+  - location (from `.symlinks/plugins/location/ios`)
+  - location_permissions (from `.symlinks/plugins/location_permissions/ios`)
+  - permission (from `.symlinks/plugins/permission/ios`)
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - lottie-ios
+    - Toast
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_lottie:
+    :path: ".symlinks/plugins/flutter_lottie/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  geocoder:
+    :path: ".symlinks/plugins/geocoder/ios"
+  geolocator:
+    :path: ".symlinks/plugins/geolocator/ios"
+  google_maps_flutter:
+    :path: ".symlinks/plugins/google_maps_flutter/ios"
+  location:
+    :path: ".symlinks/plugins/location/ios"
+  location_permissions:
+    :path: ".symlinks/plugins/location_permissions/ios"
+  permission:
+    :path: ".symlinks/plugins/permission/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_lottie: c1fd7e92e771209f8b623119646c15201c5e8c87
+  fluttertoast: 6122fa75143e992b1d3470f61000f591a798cc58
+  geocoder: 3cfab70531a0b367e917bafe82df4c30f6d4c45a
+  geolocator: f7622e0e7e2a24718285b73916d60c4a54b9f5b6
+  google_maps_flutter: c7f9c73576de1fbe152a227bfd6e6c4ae8088619
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  location: 3a2eed4dd2fab25e7b7baf2a9efefe82b512d740
+  location_permissions: 7e0f9aa0f60deb8ff93ddf0e2a164c7e8197bc94
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  permission: c186483e23779d53def6b55986323494927c22c8
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0.beta.2
