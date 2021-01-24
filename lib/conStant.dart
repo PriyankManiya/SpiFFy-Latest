@@ -5,7 +5,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 class Constant {
 
-
   static const String fontfamily = "Montserrat";
 
   static const Color primaryColor = Color(0xffFF6230);

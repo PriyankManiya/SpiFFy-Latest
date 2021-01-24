@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 final List<String> imgList = [
   'assets/intro1.png',
   'assets/intro2.png',
