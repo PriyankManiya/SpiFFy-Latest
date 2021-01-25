@@ -67,105 +67,50 @@ class _IdScreenState extends State<IdScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            FlatButton.icon(
-                                onPressed: () {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => OrderHistory(),
-                                  ));
-                                },
-                                icon: Icon(Icons.history),
-                                label: Text(
-                                  "Order History",
-                                  style: Constant.Text15_w500_White,
-                                )),
-                            IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward_ios,
-                                  color: Colors.white,
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => OrderHistory(),
+                            ));
+                          },
+                          child: Container(
+                            color: Colors.transparent,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 10),
+                                      child: Icon(Icons.history),
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Text(
+                                      "Order History",
+                                      style: Constant.Text15_w500_White,
+                                    )
+                                  ],
                                 ),
-                                onPressed: () {})
-                          ],
-                        ),
-                        Divider(
-                          color: Colors.grey,
-                          thickness: 1,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            FlatButton.icon(
-                                onPressed: () {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => Payment(),
-                                  ));
-                                },
-                                icon: Icon(Icons.payment),
-                                label: Text(
-                                  "Payment",
-                                  style: Constant.Text15_w500_White,
-                                )),
-                            IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward_ios,
-                                  color: Colors.white,
-                                ),
-                                onPressed: () {})
-                          ],
-                        ),
-                        Divider(
-                          color: Colors.grey,
-                          thickness: 1,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            FlatButton.icon(
-                                onPressed: () {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => AddressPage(),
-                                  ));
-                                },
-                                icon: Icon(Icons.add_location),
-                                label: Text(
-                                  "Address",
-                                  style: Constant.Text15_w500_White,
-                                )),
-                            IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward_ios,
-                                  color: Colors.white,
-                                ),
-                                onPressed: () {})
-                          ],
-                        ),
-                        Divider(
-                          color: Colors.grey,
-                          thickness: 1,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            FlatButton.icon(
-                                onPressed: () {
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => Favourite(),
-                                  ));
-                                },
-                                icon: Icon(Icons.favorite_border),
-                                label: Text(
-                                  "Favourite Orders",
-                                  style: Constant.Text15_w500_White,
-                                )),
-                            IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward_ios,
-                                  color: Colors.white,
-                                ),
-                                onPressed: () {})
-                          ],
+
+                                // FlatButton.icon(
+                                //     onPressed: () {
+                                //
+                                //     },
+                                //     icon: Icon(Icons.history),
+                                //     label: Text(
+                                //       "Order History",
+                                //       style: Constant.Text15_w500_White,
+                                //     )),
+                                IconButton(
+                                    icon: Icon(
+                                      Icons.arrow_forward_ios,
+                                      color: Colors.white,
+                                    ),
+                                    onPressed: () {})
+                              ],
+                            ),
+                          ),
                         ),
                         Divider(
                           color: Colors.grey,
@@ -173,19 +118,147 @@ class _IdScreenState extends State<IdScreen> {
                         ),
                         GestureDetector(
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => Settings(),));
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Payment(),
+                            ));
                           },
                           child: Container(
+                            color: Colors.transparent,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                FlatButton.icon(
-                                    onPressed: (){},
-                                    icon: Icon(Icons.settings),
-                                    label: Text(
+
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 10),
+                                      child: Icon(Icons.payment),
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Text(
+                                      "Payment",
+                                      style: Constant.Text15_w500_White,
+                                    )
+                                  ],
+                                ),
+                                IconButton(
+                                    icon: Icon(
+                                      Icons.arrow_forward_ios,
+                                      color: Colors.white,
+                                    ),
+                                    onPressed: () {})
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          color: Colors.grey,
+                          thickness: 1,
+                        ),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => AddressPage(),
+                            ));
+                          },
+                          child: Container(
+                            color: Colors.transparent,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 10),
+                                      child: Icon(Icons.add_location),
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Text(
+                                      "Address",
+                                      style: Constant.Text15_w500_White,
+                                    )
+                                  ],
+                                ),
+                                IconButton(
+                                    icon: Icon(
+                                      Icons.arrow_forward_ios,
+                                      color: Colors.white,
+                                    ),
+                                    onPressed: () {})
+                              ],
+                            ),
+                          ),
+                        ),
+
+                        Divider(
+                          color: Colors.grey,
+                          thickness: 1,
+                        ),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Favourite(),
+                            ));
+                          },
+                          child: Container(
+                            color: Colors.transparent,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 10),
+                                      child: Icon(Icons.favorite_border),
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Text(
+                                      "Favourite Orders",
+                                      style: Constant.Text15_w500_White,
+                                    )
+                                  ],
+                                ),
+                                IconButton(
+                                    icon: Icon(
+                                      Icons.arrow_forward_ios,
+                                      color: Colors.white,
+                                    ),
+                                    onPressed: () {})
+                              ],
+                            ),
+                          ),
+                        ),
+                        Divider(
+                          color: Colors.grey,
+                          thickness: 1,
+                        ),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Settings(),
+                            ));
+                          },
+                          child: Container(
+                            color: Colors.transparent,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 10),
+                                      child: Icon(Icons.settings),
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Text(
                                       "Settings",
-                                      style:Constant.Text15_w500_White,
-                                    )),
+                                      style: Constant.Text15_w500_White,
+                                    )
+                                  ],
+                                ),
                                 IconButton(
                                     icon: Icon(
                                       Icons.arrow_forward_ios,
