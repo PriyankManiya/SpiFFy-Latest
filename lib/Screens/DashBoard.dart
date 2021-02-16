@@ -2,7 +2,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:spiffy/Screens/Search_Screen.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 import 'package:spiffy/widget/dashBoardItem.dart';
 import 'FoodList.dart';
 import 'HomeHeader.dart';

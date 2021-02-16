@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 import 'Cart2_Screen.dart';
 import 'FoodList.dart';
 

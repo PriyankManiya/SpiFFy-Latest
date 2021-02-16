@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../conStant.dart';
+import '../widget/conStant.dart';
 
 class Menu {
   String title;

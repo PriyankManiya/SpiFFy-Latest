@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:spiffy/Screens/Schedule_Delivery_page.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 import 'package:spiffy/widget/cartItem.dart';
 
 class Cart2Screen extends StatefulWidget {

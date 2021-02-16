@@ -1,6 +1,6 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 import 'Screens/Login.dart';
 
 void main() {

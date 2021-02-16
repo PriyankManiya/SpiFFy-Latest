@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../conStant.dart';
+import 'conStant.dart';
 
 // ignore: must_be_immutable
 class AddressItem extends StatefulWidget {

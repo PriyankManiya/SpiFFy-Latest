@@ -6,7 +6,7 @@ import 'package:spiffy/Screens/Order_History.dart';
 import 'package:spiffy/Screens/Payment.dart';
 import 'package:spiffy/Screens/Settings.dart';
 
-import '../conStant.dart';
+import '../widget/conStant.dart';
 
 class IdScreen extends StatefulWidget {
   @override

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:spiffy/Screens/Confirem_Order_Page.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 
 class ScheduleDeliveryPage extends StatefulWidget {
   @override

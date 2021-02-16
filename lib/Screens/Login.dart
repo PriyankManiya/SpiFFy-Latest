@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../conStant.dart';
+import '../widget/conStant.dart';
 import 'OtpScreen.dart';
 
 class Login extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 
 class Settings extends StatefulWidget {
   @override

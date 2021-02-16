@@ -3,7 +3,7 @@ import 'package:geocoder/geocoder.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geocoder/services/base.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 
 class GoogleMapAddScreen extends StatefulWidget {
   @override

@@ -3,7 +3,7 @@ import 'package:awesome_card/extra/card_type.dart';
 import 'package:awesome_card/style/card_background.dart';
 import 'package:flutter/material.dart';
 
-import '../conStant.dart';
+import '../widget/conStant.dart';
 
 class Payment extends StatefulWidget {
   @override

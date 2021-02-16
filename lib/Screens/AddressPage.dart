@@ -4,7 +4,7 @@ import 'package:geocoder/geocoder.dart';
 import 'package:geocoder/model.dart';
 import 'package:geocoder/services/base.dart';
 import 'package:location/location.dart';
-import '../conStant.dart';
+import '../widget/conStant.dart';
 import 'GoogleMapAddScreen.dart';
 
 class AddressPage extends StatefulWidget {

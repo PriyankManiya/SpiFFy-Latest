@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spiffy/Screens/ItemScreen.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 
 // ignore: must_be_immutable
 class SearchScreenItem extends StatefulWidget {

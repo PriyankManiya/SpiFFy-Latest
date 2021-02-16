@@ -4,7 +4,7 @@ import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:spiffy/Screens/Cart2_Screen.dart';
 import 'package:spiffy/Screens/Id_Screen.dart';
 import 'package:spiffy/Screens/Search_Screen.dart';
-import 'package:spiffy/conStant.dart';
+import 'package:spiffy/widget/conStant.dart';
 import 'DashBoard.dart';
 
 // ignore: camel_case_types
