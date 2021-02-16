@@ -57,32 +57,40 @@ class _DashboardState extends State<Dashboard> {
                       Padding(
                         padding: EdgeInsets.only(left: 5.0, right: 10.0),
                         child: Container(
-                          padding: EdgeInsets.all(10.0),
+                          padding: EdgeInsets.only(left: 10, right: 10),
                           decoration: BoxDecoration(
                               borderRadius:
-                                  BorderRadius.all(Radius.circular(8.0)),
+                              BorderRadius.all(Radius.circular(8.0)),
                               border: Border.all(
                                   width: 2.0, color: Colors.grey[300])),
                           child: GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => SearchScreen(),
-                              ));
-                            },
+                            onTap: () {},
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                                Icon(
-                                  Icons.search,
-                                  color: Colors.white,
+                                Flexible(
+                                  flex: 1,
+                                  child: Icon(
+                                    Icons.search,
+                                    color: Colors.white,
+                                  ),
                                 ),
-                                Text(
-                                  "Search Food",
-                                  style: Constant.Text16_w600_White,
-                                ),
-                                Icon(
-                                  Icons.filter_list,
-                                  color: Colors.white,
+                                Flexible(
+                                    flex: 4,
+                                    child: TextField(
+                                      cursorColor: Colors.white,
+                                      decoration: InputDecoration(
+                                          hintText: "Search Restaurants",
+                                          hintStyle: Constant.Text18_w600_White,
+                                          enabledBorder: InputBorder.none,
+                                          focusedBorder: InputBorder.none),
+                                    )),
+                                Flexible(
+                                  flex: 1,
+                                  child: Icon(
+                                    Icons.filter_list,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ],
                             ),
