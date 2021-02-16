@@ -14,11 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: Hello(),
+      home: SplashPages(),
     );
   }
 }
-
 
 final List<String> imgList = [
   'assets/intro1.png',
@@ -26,12 +25,12 @@ final List<String> imgList = [
   'assets/intro3.png'
 ];
 
-class Hello extends StatefulWidget {
+class SplashPages extends StatefulWidget {
   @override
-  _HelloState createState() => _HelloState();
+  _SplashPagesState createState() => _SplashPagesState();
 }
 
-class _HelloState extends State<Hello> {
+class _SplashPagesState extends State<SplashPages> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
@@ -46,7 +45,7 @@ class _HelloState extends State<Hello> {
             child: FlatButton(
               child: Text(
                 "Place Order",
-                style:Constant.Text22_Bold_white,
+                style: Constant.Text22_Bold_white,
               ),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),

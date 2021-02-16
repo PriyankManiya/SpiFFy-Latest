@@ -51,11 +51,16 @@ class _DashBoardItemState extends State<DashBoardItem> {
                   child: Hero(
                       tag: widget.imageName,
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.only(
+
+                            topLeft: Radius.circular(18),
+                            bottomLeft: Radius.circular(18)
+
+                        ),
                         child: Image.asset(
                           "assets/${widget.imageName}",
                           fit: BoxFit.fitHeight,
-                          height: 150,
+                          height: 140,
                         ),
                       )),
                 ),

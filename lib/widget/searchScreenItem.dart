@@ -11,7 +11,13 @@ class SearchScreenItem extends StatefulWidget {
   String imgPath;
   String rating;
 
-  SearchScreenItem({this.rating,this.imgPath,this.kms,this.add,this.location,this.restName});
+  SearchScreenItem(
+      {this.rating,
+      this.imgPath,
+      this.kms,
+      this.add,
+      this.location,
+      this.restName});
 
   @override
   _SearchScreenItemState createState() => _SearchScreenItemState();
@@ -25,7 +31,10 @@ class _SearchScreenItemState extends State<SearchScreenItem> {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => ItemScreen(imgPath: widget.imgPath,imageName: widget.restName,),
+          builder: (context) => ItemScreen(
+            imgPath: widget.imgPath,
+            imageName: widget.restName,
+          ),
         ));
       },
       child: Padding(
@@ -41,9 +50,15 @@ class _SearchScreenItemState extends State<SearchScreenItem> {
                 flex: 2,
                 child: Hero(
                     tag: widget.restName,
-                    child: Image.asset(
-                      "assets/${widget.imgPath}",
-                      fit: BoxFit.cover,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(18),
+                          bottomLeft: Radius.circular(18)),
+                      child: Image.asset(
+                        "assets/${widget.imgPath}",
+                        height: 130,
+                        fit: BoxFit.fitHeight,
+                      ),
                     )),
               ),
               SizedBox(
@@ -51,50 +66,54 @@ class _SearchScreenItemState extends State<SearchScreenItem> {
               ),
               Flexible(
                 flex: 3,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      widget.restName,
-                      style:Constant.Text17_w700,
-                    ),
-                    SizedBox(
-                      height: height * 0.01,
-                    ),
-                    Text(
-                      widget.add,
-                      style: Constant.Text14_w500,
-                    ),
-                    SizedBox(
-                      height: height * 0.01,
-                    ),
-                    Text(
-                      "${widget.location}  ,  1${widget.kms} Kms",
-                      style: Constant.Text14_w500,
-                    ),
-                    SizedBox(
-                      height: height * 0.02,
-                    ),
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.star,
-                          color: Constant.primaryColor,
-                        ),
-                        SizedBox(
-                          width: height * 0.01,
-                        ),
-                        Text(
-                          widget.rating,
-                          style: Constant.Text14_w500_primClr,
-                        ),
-                        SizedBox(
-                          width: height * 0.03,
-                        ),
-                      ],
-                    )
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 4, top: 4),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        widget.restName,
+                        style: Constant.Text17_w700,
+                      ),
+                      SizedBox(
+                        height: height * 0.01,
+                      ),
+                      Text(
+                        widget.add,
+                        style: Constant.Text14_w500,
+                      ),
+                      SizedBox(
+                        height: height * 0.01,
+                      ),
+                      Text(
+                        "${widget.location}  ,  1${widget.kms} Kms",
+                        style: Constant.Text14_w500,
+                      ),
+
+                      /* SizedBox(
+                        height: height * 0.02,
+                      ),*/
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Constant.primaryColor,
+                          ),
+                          SizedBox(
+                            width: height * 0.01,
+                          ),
+                          Text(
+                            widget.rating,
+                            style: Constant.Text14_w500_primClr,
+                          ),
+                          SizedBox(
+                            width: height * 0.03,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               )
             ],

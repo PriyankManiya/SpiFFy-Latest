@@ -4,8 +4,6 @@ import 'package:geocoder/geocoder.dart';
 import 'package:geocoder/model.dart';
 import 'package:geocoder/services/base.dart';
 import 'package:location/location.dart';
-import 'package:spiffy/widget/AddressItem.dart';
-
 import '../conStant.dart';
 import 'GoogleMapAddScreen.dart';
 
@@ -15,7 +13,6 @@ class AddressPage extends StatefulWidget {
 }
 
 class _AddressPageState extends State<AddressPage> {
-
   String dateValue;
   double x = 5;
   String locationString;
@@ -309,7 +306,6 @@ class _AddressPageState extends State<AddressPage> {
                         ListView.builder(
                           itemCount: listOfAdd.length,
                           shrinkWrap: true,
-
                           itemBuilder: (context, index) {
                             return Padding(
                               padding:

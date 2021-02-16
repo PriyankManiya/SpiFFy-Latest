@@ -101,7 +101,7 @@ class _SearchScreenState extends State<SearchScreen> {
               SizedBox(
                 height: height * 0.03,
               ),
-              SearchScreenItem(imgPath: "continental.png",rating: "4.2",kms: "17",add: "32 B, Royal Square",location: "Los Angeles",restName: "Continental Restaurant",),
+              SearchScreenItem(imgPath: "continental.png",rating: "4.2",kms: "17",add: "32 B, Royal Square",location: "Los Angeles",restName: "Restaurant",),
               SizedBox(
                 height: height * 0.018,
               ),
